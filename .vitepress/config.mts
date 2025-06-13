@@ -16,7 +16,15 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: "首页", link: "/" },
-      { text: "主题开发", link: "/develop/quickstart", activeMatch: "/develop.*" },
+      { 
+        text: "主题开发", 
+        activeMatch: "/develop.*",
+        items: [
+          { text: "快速开始", link: "/develop/quickstart" },
+          { text: "组件模板", link: "/develop/template/quickstart" },
+          { text: "页面布局", link: "/develop/layouts/quickstart" },
+        ]
+      },
     ],
 
     sidebar: {
@@ -45,6 +53,31 @@ export default defineConfig({
           ]
         },
         {
+          base: "/develop/function/",
+          text: '框架功能',
+          link: "quickstart",
+          items: [
+            {
+              text: '方法函数',
+              items: [
+                {
+                  text: 'Get',
+                  link: 'get'
+                },
+              ]
+            },
+            {
+              text: '集成功能',
+              items: [
+                {
+                  text: 'Ajax',
+                  link: 'ajax'
+                },
+              ]
+            },
+          ],
+        },
+        {
           base: "/develop/template/",
           text: '组件模板',
           link: "quickstart",
@@ -69,16 +102,20 @@ export default defineConfig({
               link: 'home'
             },
             {
-              text: 'archive.php',
-              link: 'archive'
-            },
-            {
               text: 'post.php',
               link: 'post'
             },
             {
               text: 'page.php',
               link: 'page'
+            },
+            {
+              text: 'search.php',
+              link: 'search'
+            },
+            {
+              text: 'archive.php',
+              link: 'archive'
             },
             {
               text: '404.php',
