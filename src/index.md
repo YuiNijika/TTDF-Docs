@@ -1,4 +1,7 @@
 ---
+title: TTDF
+titleTemplate: 最直观的 Typecho 主题模板开发框架
+
 layout: home
 
 hero:

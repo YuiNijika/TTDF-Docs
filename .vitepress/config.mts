@@ -61,17 +61,45 @@ export default defineConfig({
               text: '方法函数',
               items: [
                 {
+                  text: 'Site',
+                  link: 'site'
+                },
+                {
                   text: 'Get',
                   link: 'get'
                 },
+                {
+                  text: 'GetPost',
+                  link: 'get-post'
+                },
+                {
+                  text: 'GetUser',
+                  link: 'get-user'
+                },
+                {
+                  text: 'GetTheme',
+                  link: 'get-theme'
+                }
               ]
             },
             {
               text: '集成功能',
               items: [
                 {
+                  text: 'API',
+                  link: 'api'
+                },
+                {
                   text: 'Ajax',
                   link: 'ajax'
+                },
+                {
+                  text: 'Hook',
+                  link: 'hook'
+                },
+                {
+                  text: 'useSeo',
+                  link: 'seo'
                 },
               ]
             },
@@ -80,7 +108,6 @@ export default defineConfig({
         {
           base: "/develop/template/",
           text: '组件模板',
-          link: "quickstart",
           items: [
             {
               text: 'AppHeader.php',
