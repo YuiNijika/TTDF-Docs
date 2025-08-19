@@ -127,6 +127,10 @@ export default defineConfig({
             },
           ],
         },
+        {
+          text: '集成Vite',
+          link: "develop/vite/quickstart",
+        },
       ],
     },
 
