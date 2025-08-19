@@ -44,25 +44,23 @@ export default defineConfig({
       { text: "首页", link: "/" },
       { 
         text: "主题开发", 
-        activeMatch: "/documentation.*",
+        activeMatch: "/develop.*",
         items: [
-          { text: "快速开始", link: "/documentation/quickstart" },
-          { text: "组件模板", link: "/documentation/template/quickstart" },
-          { text: "页面布局", link: "/documentation/layouts/quickstart" },
+          { text: "快速开始", link: "/develop/quickstart" },
         ]
       },
     ],
 
     // 侧边栏
     sidebar: {
-      'documentation': [
+      'develop': [
         {
-          base: "/documentation/",
+          base: "/develop/",
           text: '快速开始',
           link: "quickstart",
           items: [
             {
-              base: "/documentation/app/components/",
+              base: "/develop/app/components/",
               text: '组件',
               items: [
                 {
@@ -94,7 +92,7 @@ export default defineConfig({
           ]
         },
         {
-          base: "/documentation/function/",
+          base: "/develop/function/",
           text: '框架功能',
           link: "quickstart",
           items: [
@@ -187,6 +185,6 @@ export default defineConfig({
   },
   
   ignoreDeadLinks: [
-    '/documentation/elements'
+    '/develop/elements'
   ]
 })

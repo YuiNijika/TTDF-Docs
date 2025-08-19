@@ -16,7 +16,7 @@ hero:
   actions:
     - theme: brand
       text: 阅读文档
-      link: /documentation/quickstart
+      link: /develop/quickstart
     - theme: alt
       text: GitHub↗
       link: https://github.com/YuiNijika/TTDF
