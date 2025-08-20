@@ -16,10 +16,10 @@
 
 如果有`git`环境就打开终端执行
 ```bash
-git clone https://github.com/ShuShuicu/TTDF.git
+git clone https://github.com/YuiNijika/TTDF.git
 ```
 
-如果没有就到 [GitHub Releases](https://github.com/ShuShuicu/TTDF/releases) 进行下载
+如果没有就到 [GitHub Releases](https://github.com/YuiNijika/TTDF/releases) 进行下载
 
 将下载/拉取的代码放到`Typecho/usr/themes/`目录的主题文件夹下
 
@@ -42,6 +42,6 @@ git clone https://github.com/ShuShuicu/TTDF.git
  * @package TTDF
  * @author 鼠子(Tomoriゞ)
  * @version 1.0.0
- * @link https://github.com/ShuShuicu/TTDF
+ * @link https://github.com/YuiNijika/TTDF
  */
 ```

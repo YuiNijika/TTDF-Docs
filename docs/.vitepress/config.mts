@@ -60,22 +60,8 @@ export default defineConfig({
           link: "quickstart",
           items: [
             {
-              base: "/develop/app/components/",
               text: '组件',
-              items: [
-                {
-                  text: '编写及调用',
-                  link: 'quickstart'
-                },
-                {
-                  text: 'AppHeader',
-                  link: 'app-header'
-                },
-                {
-                  text: 'AppFooter',
-                  link: 'app-footer'
-                },
-              ]
+              link: 'app/components',
             },
             {
               text: '框架配置',
@@ -98,7 +84,16 @@ export default defineConfig({
           items: [
             {
               text: '类与方法',
-              link: 'class'
+              items: [
+                {
+                  text: '面向对象',
+                  link: 'oop'
+                },
+                {
+                  text: '面向过程',
+                  link: 'opp'
+                },
+              ]
             },
             {
               text: '集成功能',
@@ -123,13 +118,13 @@ export default defineConfig({
                   text: 'RestAPI',
                   link: 'rest-api'
                 },
+                {
+                  text: 'Vite&Vue',
+                  link: 'vite-vue'
+                },
               ]
             },
           ],
-        },
-        {
-          text: '集成Vite',
-          link: "develop/vite/quickstart",
         },
       ],
     },

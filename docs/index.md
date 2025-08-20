@@ -22,8 +22,17 @@ hero:
       link: https://github.com/YuiNijika/TTDF
 
 features:
-  - title: Bash
-    details: git clone https://github.com/ShuShuicu/TTDF.git
+  - icon: 😺
+    title: 组件化
+    details: 减少重复代码让其更加简洁易于维护
+  - icon: 😸
+    title: 快速调用
+    details: 对Typecho的调用方法进行封装以OOP&OPP模式进行调用
+  - icon: 😼
+    title: 强大模块
+    details: TTDF内置了Ajax、RestAPI、钩子系统、自动路由等模块, 还可集成 Vite&Vue3 进行开发
 
 ---
 <home/>
+
+<iframe frameborder="no" border="0" marginwidth="0" marginheight="0" width=100% height=82 style="margin-top: 35px;" src="//music.163.com/outchain/player?type=2&id=2097486090&auto=1&height=66"></iframe>
