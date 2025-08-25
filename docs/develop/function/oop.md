@@ -379,6 +379,28 @@ GetUser::DisplayName();
 $displayName = GetUser::DisplayName(false);
 ```
 
+### GetUser::Uid()
+获取用户UID
+
+```php
+GetUser::Uid();
+$uid = GetUser::Uid(false);
+```
+
+### GetUser::Login()
+获取用户登录状态
+
+```php
+GetUser::Login();
+$login = GetUser::Login(false);
+```
+
+```php
+GetUser::Login();
+$login = GetUser::Login(false);
+```
+
+
 ### GetUser::Avatar()
 获取用户头像
 

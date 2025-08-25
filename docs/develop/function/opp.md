@@ -379,6 +379,22 @@ get_user_display_name();
 $displayName = get_user_display_name(false);
 ```
 
+### get_user_uid()
+获取用户UID
+
+```php
+get_user_uid();
+$uid = get_user_uid(false);
+```
+
+### get_user_login()
+获取用户登录状态
+
+```php
+get_user_login();
+$login = get_user_login(false);
+```
+
 ### get_user_avatar()
 获取用户头像
 

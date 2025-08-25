@@ -22,6 +22,7 @@
 | Get  |       /ty-json/content/{string}        |   cid, slug   |     获取内容数据     |
 | Get  |          /ty-json/attachments          |     null      |     获取附件列表     |
 | Get  |           /ty-json/comments            |     post      |     获取评论列表     |
+| POST |           /ty-json/comments            |     null      |       提交评论       |
 | Get  |       /ty-json/comments/{string}       |    string     |     获取评论详情     |
 | Get  |     /ty-json/comments/cid/{string}     |    string     |   获取文章评论列表   |
 | Get  |     /ty-json/fields/{name}/{value}     |    string     |   获取字段文章列表   |
