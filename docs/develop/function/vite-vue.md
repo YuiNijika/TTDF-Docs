@@ -23,10 +23,9 @@ npm install
 Vite只会构建`src/components`目录下的组件  
 构建出的文件不包含Vue语法, 如果不需要Vue处理该组建则删除 `data-component=""` 即可
 
-
 ## 运行
 
-### 启动Vite 
+### 启动Vite
 
 ``` Bash
 npm run dev

@@ -1,6 +1,8 @@
 # REST API
 
-一个简单的 REST API，你可以使用它来获取一些数据。
+::: tip
+提供简单易用的 REST API 接口，用于获取网站数据。
+:::
 
 > `ty-json`路由及状态在`app/TTDF.Config.php`中定义。
 

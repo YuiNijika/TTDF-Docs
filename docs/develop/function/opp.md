@@ -18,6 +18,7 @@
 ## 基础函数
 
 ### get_header()
+
 输出或返回头部元数据和link标签
 
 ```php
@@ -32,12 +33,14 @@ get_header(true, 'keywords,description');
 ```
 
 **参数：**
+
 - `$echo` (bool|null): 是否直接输出，默认 true
 - `$exclude` (string|null): 要排除的meta或link标签，多个用逗号分隔
 
 **返回值：** string
 
 ### get_footer()
+
 输出或返回页脚内容
 
 ```php
@@ -49,11 +52,13 @@ $footer = get_footer(false);
 ```
 
 **参数：**
+
 - `$echo` (bool): 是否直接输出，默认 true
 
 **返回值：** string|null
 
 ### get_next()
+
 获取下一项内容，用于循环输出
 
 ```php
@@ -70,6 +75,7 @@ while (get_next()) {
 ## 站点信息函数
 
 ### get_site_url()
+
 获取站点URL
 
 ```php
@@ -81,6 +87,7 @@ $url = get_site_url(false);
 ```
 
 ### get_site_domain()
+
 获取站点域名
 
 ```php
@@ -89,6 +96,7 @@ $domain = get_site_domain(false);
 ```
 
 ### get_site_name()
+
 获取站点名称
 
 ```php
@@ -97,6 +105,7 @@ $name = get_site_name(false);
 ```
 
 ### get_site_keywords()
+
 获取站点关键词
 
 ```php
@@ -105,6 +114,7 @@ $keywords = get_site_keywords(false);
 ```
 
 ### get_site_description()
+
 获取站点描述
 
 ```php
@@ -113,6 +123,7 @@ $description = get_site_description(false);
 ```
 
 ### get_site_language()
+
 获取站点语言
 
 ```php
@@ -121,6 +132,7 @@ $lang = get_site_language(false);
 ```
 
 ### get_site_charset()
+
 获取站点字符集
 
 ```php
@@ -129,6 +141,7 @@ $charset = get_site_charset(false);
 ```
 
 ### get_site_page_url()
+
 获取当前页面URL
 
 ```php
@@ -137,6 +150,7 @@ $pageUrl = get_site_page_url(false);
 ```
 
 ### get_site_theme_name()
+
 获取当前主题名称
 
 ```php
@@ -151,6 +165,7 @@ $theme = get_site_theme_name(false);
 ### 基础文章信息
 
 #### get_post()
+
 获取当前文章对象
 
 ```php
@@ -158,6 +173,7 @@ $post = get_post();
 ```
 
 #### get_post_id()
+
 获取文章ID
 
 ```php
@@ -166,6 +182,7 @@ $id = get_post_id(false);
 ```
 
 #### get_post_title()
+
 获取文章标题
 
 ```php
@@ -174,6 +191,7 @@ $title = get_post_title(false);
 ```
 
 #### get_post_content()
+
 获取文章内容
 
 ```php
@@ -182,6 +200,7 @@ $content = get_post_content(false);
 ```
 
 #### get_post_excerpt()
+
 获取文章摘要
 
 ```php
@@ -190,6 +209,7 @@ $excerpt = get_post_excerpt(false);
 ```
 
 #### get_post_date()
+
 获取文章发布日期
 
 ```php
@@ -204,6 +224,7 @@ $date = get_post_date('Y-m-d', false);
 ```
 
 #### get_post_permalink()
+
 获取文章永久链接
 
 ```php
@@ -214,6 +235,7 @@ $link = get_post_permalink(false);
 ### 文章作者信息
 
 #### get_post_author()
+
 获取文章作者名称
 
 ```php
@@ -222,6 +244,7 @@ $author = get_post_author(false);
 ```
 
 #### get_post_author_avatar()
+
 获取作者头像
 
 ```php
@@ -236,6 +259,7 @@ $avatar = get_post_author_avatar(128, false);
 ```
 
 #### get_post_author_link()
+
 获取作者链接
 
 ```php
@@ -246,6 +270,7 @@ $authorLink = get_post_author_link(false);
 ### 文章分类和标签
 
 #### get_post_category()
+
 获取文章分类
 
 ```php
@@ -257,6 +282,7 @@ $category = get_post_category(false);
 ```
 
 #### get_post_tags()
+
 获取文章标签
 
 ```php
@@ -270,6 +296,7 @@ $tags = get_post_tags(false);
 ### 文章统计
 
 #### get_post_word_count()
+
 获取文章字数统计
 
 ```php
@@ -278,6 +305,7 @@ $wordCount = get_post_word_count(false);
 ```
 
 #### get_post_total()
+
 获取文章总数
 
 ```php
@@ -288,6 +316,7 @@ $total = get_post_total(false);
 ### 文章列表
 
 #### get_random_posts()
+
 获取随机文章
 
 ```php
@@ -299,6 +328,7 @@ get_random_posts(5);
 ```
 
 #### render_random_posts()
+
 渲染随机文章列表
 
 ```php
@@ -310,6 +340,7 @@ $rendered = render_random_posts(5, false);
 ```
 
 #### get_post_list()
+
 获取文章列表
 
 ```php
@@ -320,6 +351,7 @@ get_post_list(); // 直接输出
 ### 数据库相关
 
 #### get_post_db_title()
+
 从数据库获取文章标题
 
 ```php
@@ -328,6 +360,7 @@ $dbTitle = get_post_db_title(false);
 ```
 
 #### get_post_db_content()
+
 从数据库获取文章内容
 
 ```php
@@ -336,6 +369,7 @@ $dbContent = get_post_db_content(false);
 ```
 
 #### get_post_db_content_html()
+
 从数据库获取文章内容并转换为HTML
 
 ```php
@@ -346,6 +380,7 @@ $htmlContent = get_post_db_content_html(false);
 ### 文章实例绑定
 
 #### bind_post_archive()
+
 绑定文章实例
 
 ```php
@@ -353,6 +388,7 @@ bind_post_archive($archive);
 ```
 
 #### unbind_post_archive()
+
 解除文章实例绑定
 
 ```php
@@ -364,6 +400,7 @@ unbind_post_archive();
 ## 用户相关函数
 
 ### get_user_name()
+
 获取用户名
 
 ```php
@@ -372,6 +409,7 @@ $username = get_user_name(false);
 ```
 
 ### get_user_display_name()
+
 获取用户显示名称
 
 ```php
@@ -380,6 +418,7 @@ $displayName = get_user_display_name(false);
 ```
 
 ### get_user_uid()
+
 获取用户UID
 
 ```php
@@ -388,6 +427,7 @@ $uid = get_user_uid(false);
 ```
 
 ### get_user_login()
+
 获取用户登录状态
 
 ```php
@@ -396,6 +436,7 @@ $login = get_user_login(false);
 ```
 
 ### get_user_avatar()
+
 获取用户头像
 
 ```php
@@ -410,6 +451,7 @@ $avatar = get_user_avatar(128, false);
 ```
 
 ### get_user_email()
+
 获取用户邮箱
 
 ```php
@@ -418,6 +460,7 @@ $email = get_user_email(false);
 ```
 
 ### get_user_website()
+
 获取用户网站
 
 ```php
@@ -426,6 +469,7 @@ $website = get_user_website(false);
 ```
 
 ### get_user_role()
+
 获取用户角色
 
 ```php
@@ -434,6 +478,7 @@ $role = get_user_role(false);
 ```
 
 ### get_user_registered()
+
 获取用户注册时间
 
 ```php
@@ -448,6 +493,7 @@ $registered = get_user_registered('Y-m-d H:i:s', false);
 ```
 
 ### get_user_last_login()
+
 获取用户最后登录时间
 
 ```php
@@ -456,6 +502,7 @@ $lastLogin = get_user_last_login('Y-m-d H:i:s', false);
 ```
 
 ### get_user_post_count()
+
 获取用户文章数量
 
 ```php
@@ -464,6 +511,7 @@ $postCount = get_user_post_count(false);
 ```
 
 ### get_user_page_count()
+
 获取用户页面数量
 
 ```php
@@ -472,6 +520,7 @@ $pageCount = get_user_page_count(false);
 ```
 
 ### get_user_permalink()
+
 获取用户链接
 
 ```php
@@ -484,6 +533,7 @@ $userLink = get_user_permalink(false);
 ## 评论相关函数
 
 ### get_comments()
+
 获取评论内容
 
 ```php
@@ -492,6 +542,7 @@ $comments = get_comments(false);
 ```
 
 ### get_comments_page()
+
 获取评论页面
 
 ```php
@@ -500,6 +551,7 @@ $commentsPage = get_comments_page(false);
 ```
 
 ### get_comments_list()
+
 获取评论列表
 
 ```php
@@ -508,6 +560,7 @@ $commentsList = get_comments_list(false);
 ```
 
 ### get_comments_num()
+
 获取评论数量
 
 ```php
@@ -516,6 +569,7 @@ $commentsNum = get_comments_num(false);
 ```
 
 ### get_respond_id()
+
 获取回复ID
 
 ```php
@@ -524,6 +578,7 @@ $respondId = get_respond_id(false);
 ```
 
 ### get_cancel_reply()
+
 获取取消回复链接
 
 ```php
@@ -532,6 +587,7 @@ $cancelReply = get_cancel_reply(false);
 ```
 
 ### get_remember()
+
 获取记住字段
 
 ```php
@@ -540,6 +596,7 @@ $remember = get_remember(false);
 ```
 
 ### get_comments_form()
+
 获取评论表单
 
 ```php
@@ -548,6 +605,7 @@ $commentsForm = get_comments_form(false);
 ```
 
 ### get_comments_page_nav()
+
 获取评论分页导航
 
 ```php
@@ -566,6 +624,7 @@ $nav = get_comments_page_nav('« 上一页', '下一页 »', false);
 ## 主题相关函数
 
 ### get_theme_file_url()
+
 获取主题文件URL
 
 ```php
@@ -577,6 +636,7 @@ $jsUrl = get_theme_file_url('script.js', false);
 ```
 
 ### get_theme_file_path()
+
 获取主题文件绝对路径
 
 ```php
@@ -592,6 +652,7 @@ get_theme_file_path('functions.php');
 ## 通用工具函数
 
 ### get_fields()
+
 获取自定义字段
 
 ```php
@@ -600,6 +661,7 @@ $fieldValue = get_fields('custom_field');
 ```
 
 ### get_template()
+
 引入模板文件
 
 ```php
@@ -608,6 +670,7 @@ get_template('sidebar');
 ```
 
 ### get_components()
+
 引入组件文件
 
 ```php
@@ -616,6 +679,7 @@ get_components('footer');
 ```
 
 ### get_layouts()
+
 引入布局文件
 
 ```php
@@ -624,6 +688,7 @@ get_layouts('sidebar');
 ```
 
 ### get_file()
+
 引入文件
 
 ```php
@@ -631,6 +696,7 @@ get_file('custom');
 ```
 
 ### get_need()
+
 引入文件（原始方法）
 
 ```php
@@ -638,6 +704,7 @@ get_need('header.php');
 ```
 
 ### is_page()
+
 判断页面类型
 
 ```php
@@ -651,6 +718,7 @@ if (is_page('post')) {
 ```
 
 ### is_http_code()
+
 判断HTTP状态码
 
 ```php
@@ -660,6 +728,7 @@ if (is_http_code(404)) {
 ```
 
 ### get_options()
+
 获取配置参数
 
 ```php
@@ -670,7 +739,26 @@ $timezone = get_options('timezone');
 get_options('siteUrl', true);
 ```
 
+### get_client_ip()
+
+获取客户端IP
+
+```php
+get_client_ip();
+$ip = get_client_ip(false);
+```
+
+### get_client_ua()
+
+获取客户端UA
+
+```php
+get_client_ua();
+$ua = get_client_ua(false);
+```
+
 ### get_framework_version()
+
 获取框架版本
 
 ```php
@@ -679,6 +767,7 @@ $version = get_framework_version(false);
 ```
 
 ### get_typecho_version()
+
 获取Typecho版本
 
 ```php
@@ -691,6 +780,7 @@ $version = get_typecho_version(false);
 ## 分页相关函数
 
 ### get_page_nav()
+
 获取分页导航
 
 ```php
@@ -702,6 +792,7 @@ get_page_nav('« 上一页', '下一页 »');
 ```
 
 ### get_total()
+
 获取总数
 
 ```php
@@ -709,6 +800,7 @@ $total = get_total();
 ```
 
 ### get_page_size()
+
 获取页面大小
 
 ```php
@@ -716,6 +808,7 @@ $pageSize = get_page_size();
 ```
 
 ### get_page_link()
+
 获取页面链接
 
 ```php
@@ -724,6 +817,7 @@ get_page_link('', 'next'); // 下一页链接
 ```
 
 ### get_current_page()
+
 获取当前页码
 
 ```php
@@ -731,6 +825,7 @@ $currentPage = get_current_page();
 ```
 
 ### get_permalink()
+
 获取页面永久链接
 
 ```php
@@ -738,6 +833,7 @@ $permalink = get_permalink();
 ```
 
 ### get_page_url()
+
 获取当前页面URL
 
 ```php

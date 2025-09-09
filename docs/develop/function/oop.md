@@ -18,6 +18,7 @@
 ## 基础类
 
 ### Get::Header()
+
 输出或返回头部元数据和link标签
 
 ```php
@@ -32,12 +33,14 @@ Get::Header(true, 'keywords,description');
 ```
 
 **参数：**
+
 - `$echo` (bool|null): 是否直接输出，默认 true
 - `$exclude` (string|null): 要排除的meta或link标签，多个用逗号分隔
 
 **返回值：** string
 
 ### Get::Footer()
+
 输出或返回页脚内容
 
 ```php
@@ -49,11 +52,13 @@ $footer = Get::Footer(false);
 ```
 
 **参数：**
+
 - `$echo` (bool): 是否直接输出，默认 true
 
 **返回值：** string|null
 
 ### Get::Next()
+
 获取下一项内容，用于循环输出
 
 ```php
@@ -70,6 +75,7 @@ while (Get::Next()) {
 ## 站点信息类
 
 ### GetSite::Url()
+
 获取站点URL
 
 ```php
@@ -81,6 +87,7 @@ $url = GetSite::Url(false);
 ```
 
 ### GetSite::Domain()
+
 获取站点域名
 
 ```php
@@ -89,6 +96,7 @@ $domain = GetSite::Domain(false);
 ```
 
 ### GetSite::Name()
+
 获取站点名称
 
 ```php
@@ -97,6 +105,7 @@ $name = GetSite::Name(false);
 ```
 
 ### GetSite::Keywords()
+
 获取站点关键词
 
 ```php
@@ -105,6 +114,7 @@ $keywords = GetSite::Keywords(false);
 ```
 
 ### GetSite::Description()
+
 获取站点描述
 
 ```php
@@ -113,6 +123,7 @@ $description = GetSite::Description(false);
 ```
 
 ### GetSite::Language()
+
 获取站点语言
 
 ```php
@@ -121,6 +132,7 @@ $lang = GetSite::Language(false);
 ```
 
 ### GetSite::Charset()
+
 获取站点字符集
 
 ```php
@@ -129,6 +141,7 @@ $charset = GetSite::Charset(false);
 ```
 
 ### GetSite::PageUrl()
+
 获取当前页面URL
 
 ```php
@@ -137,6 +150,7 @@ $pageUrl = GetSite::PageUrl(false);
 ```
 
 ### GetSite::Theme()
+
 获取当前主题名称
 
 ```php
@@ -151,6 +165,7 @@ $theme = GetSite::Theme(false);
 ### 基础文章信息
 
 #### GetPost::getCurrentArchive()
+
 获取当前文章对象
 
 ```php
@@ -158,6 +173,7 @@ $post = GetPost::getCurrentArchive();
 ```
 
 #### GetPost::Cid()
+
 获取文章ID
 
 ```php
@@ -166,6 +182,7 @@ $id = GetPost::Cid(false);
 ```
 
 #### GetPost::Title()
+
 获取文章标题
 
 ```php
@@ -174,6 +191,7 @@ $title = GetPost::Title(false);
 ```
 
 #### GetPost::Content()
+
 获取文章内容
 
 ```php
@@ -182,6 +200,7 @@ $content = GetPost::Content(false);
 ```
 
 #### GetPost::Excerpt()
+
 获取文章摘要
 
 ```php
@@ -190,6 +209,7 @@ $excerpt = GetPost::Excerpt(false);
 ```
 
 #### GetPost::Date()
+
 获取文章发布日期
 
 ```php
@@ -204,6 +224,7 @@ $date = GetPost::Date('Y-m-d', false);
 ```
 
 #### GetPost::Permalink()
+
 获取文章永久链接
 
 ```php
@@ -214,6 +235,7 @@ $link = GetPost::Permalink(false);
 ### 文章作者信息
 
 #### GetPost::Author()
+
 获取文章作者名称
 
 ```php
@@ -222,6 +244,7 @@ $author = GetPost::Author(false);
 ```
 
 #### GetPost::AuthorAvatar()
+
 获取作者头像
 
 ```php
@@ -236,6 +259,7 @@ $avatar = GetPost::AuthorAvatar(128, false);
 ```
 
 #### GetPost::AuthorPermalink()
+
 获取作者链接
 
 ```php
@@ -246,6 +270,7 @@ $authorLink = GetPost::AuthorPermalink(false);
 ### 文章分类和标签
 
 #### GetPost::Category()
+
 获取文章分类
 
 ```php
@@ -257,6 +282,7 @@ $category = GetPost::Category(false);
 ```
 
 #### GetPost::Tags()
+
 获取文章标签
 
 ```php
@@ -270,6 +296,7 @@ $tags = GetPost::Tags(false);
 ### 文章统计
 
 #### GetPost::WordCount()
+
 获取文章字数统计
 
 ```php
@@ -278,6 +305,7 @@ $wordCount = GetPost::WordCount(false);
 ```
 
 #### GetPost::PostsNum()
+
 获取文章总数
 
 ```php
@@ -288,6 +316,7 @@ $total = GetPost::PostsNum(false);
 ### 文章列表
 
 #### GetPost::RandomPosts()
+
 获取随机文章
 
 ```php
@@ -299,6 +328,7 @@ GetPost::RandomPosts(5);
 ```
 
 #### GetPost::RenderRandomPosts()
+
 渲染随机文章列表
 
 ```php
@@ -310,6 +340,7 @@ $rendered = GetPost::RenderRandomPosts(5, false);
 ```
 
 #### GetPost::List()
+
 获取文章列表
 
 ```php
@@ -320,6 +351,7 @@ GetPost::List(); // 直接输出
 ### 数据库相关
 
 #### GetPost::DB_Title()
+
 从数据库获取文章标题
 
 ```php
@@ -328,6 +360,7 @@ $dbTitle = GetPost::DB_Title(false);
 ```
 
 #### GetPost::DB_Content()
+
 从数据库获取文章内容
 
 ```php
@@ -336,6 +369,7 @@ $dbContent = GetPost::DB_Content(false);
 ```
 
 #### GetPost::DB_Content_Html()
+
 从数据库获取文章内容并转换为HTML
 
 ```php
@@ -346,6 +380,7 @@ $htmlContent = GetPost::DB_Content_Html(false);
 ### 文章实例绑定
 
 #### GetPost::bindArchive()
+
 绑定文章实例
 
 ```php
@@ -353,6 +388,7 @@ GetPost::bindArchive($archive);
 ```
 
 #### GetPost::unbindArchive()
+
 解除文章实例绑定
 
 ```php
@@ -364,6 +400,7 @@ GetPost::unbindArchive();
 ## 用户相关类
 
 ### GetUser::Name()
+
 获取用户名
 
 ```php
@@ -372,6 +409,7 @@ $username = GetUser::Name(false);
 ```
 
 ### GetUser::DisplayName()
+
 获取用户显示名称
 
 ```php
@@ -380,6 +418,7 @@ $displayName = GetUser::DisplayName(false);
 ```
 
 ### GetUser::Uid()
+
 获取用户UID
 
 ```php
@@ -388,6 +427,7 @@ $uid = GetUser::Uid(false);
 ```
 
 ### GetUser::Login()
+
 获取用户登录状态
 
 ```php
@@ -400,8 +440,8 @@ GetUser::Login();
 $login = GetUser::Login(false);
 ```
 
-
 ### GetUser::Avatar()
+
 获取用户头像
 
 ```php
@@ -416,6 +456,7 @@ $avatar = GetUser::Avatar(128, false);
 ```
 
 ### GetUser::AvatarURL()
+
 获取用户头像URL
 
 ```php
@@ -424,6 +465,7 @@ $avatarUrl = GetUser::AvatarURL(false);
 ```
 
 ### GetUser::Email()
+
 获取用户邮箱
 
 ```php
@@ -432,6 +474,7 @@ $email = GetUser::Email(false);
 ```
 
 ### GetUser::WebSite()
+
 获取用户网站
 
 ```php
@@ -440,6 +483,7 @@ $website = GetUser::WebSite(false);
 ```
 
 ### GetUser::Bio()
+
 获取用户简介
 
 ```php
@@ -448,6 +492,7 @@ $bio = GetUser::Bio(false);
 ```
 
 ### GetUser::Role()
+
 获取用户角色
 
 ```php
@@ -456,6 +501,7 @@ $role = GetUser::Role(false);
 ```
 
 ### GetUser::Registered()
+
 获取用户注册时间
 
 ```php
@@ -470,6 +516,7 @@ $registered = GetUser::Registered('Y-m-d H:i:s', false);
 ```
 
 ### GetUser::LastLogin()
+
 获取最后登录时间
 
 ```php
@@ -478,6 +525,7 @@ $lastLogin = GetUser::LastLogin(false);
 ```
 
 ### GetUser::PostCount()
+
 获取用户文章数
 
 ```php
@@ -486,6 +534,7 @@ $postCount = GetUser::PostCount(false);
 ```
 
 ### GetUser::PageCount()
+
 获取用户页面数
 
 ```php
@@ -494,6 +543,7 @@ $pageCount = GetUser::PageCount(false);
 ```
 
 ### GetUser::Permalink()
+
 获取用户链接
 
 ```php
@@ -506,6 +556,7 @@ $userLink = GetUser::Permalink(false);
 ## 评论相关类
 
 ### GetComment::CommentsNum()
+
 获取评论数量
 
 ```php
@@ -514,6 +565,7 @@ $num = GetComment::CommentsNum(false);
 ```
 
 ### GetComment::CommentsList()
+
 获取评论列表
 
 ```php
@@ -522,6 +574,7 @@ $list = GetComment::CommentsList(false);
 ```
 
 ### GetComment::CommentsPageNav()
+
 获取评论分页导航
 
 ```php
@@ -530,6 +583,7 @@ $nav = GetComment::CommentsPageNav(false);
 ```
 
 ### GetComment::CommentsForm()
+
 获取评论表单
 
 ```php
@@ -542,6 +596,7 @@ $form = GetComment::CommentsForm(false);
 ## 主题相关类
 
 ### GetTheme::Url()
+
 获取主题URL
 
 ```php
@@ -550,6 +605,7 @@ $url = GetTheme::Url(false);
 ```
 
 ### GetTheme::Dir()
+
 获取主题目录
 
 ```php
@@ -558,6 +614,7 @@ $dir = GetTheme::Dir(false);
 ```
 
 ### GetTheme::AssetsUrl()
+
 获取资源URL
 
 ```php
@@ -566,6 +623,7 @@ $assetsUrl = GetTheme::AssetsUrl(false);
 ```
 
 ### GetTheme::Name()
+
 获取主题名称
 
 ```php
@@ -574,6 +632,7 @@ $name = GetTheme::Name(false);
 ```
 
 ### GetTheme::Author()
+
 获取主题作者
 
 ```php
@@ -582,6 +641,7 @@ $author = GetTheme::Author(false);
 ```
 
 ### GetTheme::Ver()
+
 获取主题版本
 
 ```php
@@ -594,6 +654,7 @@ $version = GetTheme::Ver(false);
 ## 通用工具类
 
 ### Get::Need()
+
 引入文件（原始方法）
 
 ```php
@@ -601,6 +662,7 @@ Get::Need('header.php');
 ```
 
 ### Get::Is()
+
 判断页面类型
 
 ```php
@@ -614,6 +676,7 @@ if (Get::Is('post')) {
 ```
 
 ### Get::IsHttpCode()
+
 判断HTTP状态码
 
 ```php
@@ -623,6 +686,7 @@ if (Get::IsHttpCode(404)) {
 ```
 
 ### Get::Options()
+
 获取配置参数
 
 ```php
@@ -633,7 +697,26 @@ $timezone = Get::Options('timezone');
 Get::Options('siteUrl', true);
 ```
 
+### Get::ClientIp()
+
+获取客户端IP
+
+```php
+Get::ClientIp();
+$ip = Get::ClientIp(false);
+```
+
+### Get::ClientUA()
+
+获取客户端UA
+
+```php
+Get::ClientUA();
+$ua = Get::ClientUA(false);
+```
+
 ### Get::FrameworkVer()
+
 获取框架版本
 
 ```php
@@ -642,6 +725,7 @@ $version = Get::FrameworkVer(false);
 ```
 
 ### Get::TypechoVer()
+
 获取Typecho版本
 
 ```php
@@ -654,6 +738,7 @@ $version = Get::TypechoVer(false);
 ## 分页相关类
 
 ### Get::PageNav()
+
 获取分页导航
 
 ```php
@@ -665,6 +750,7 @@ Get::PageNav('« 上一页', '下一页 »');
 ```
 
 ### Get::Total()
+
 获取总数
 
 ```php
@@ -672,6 +758,7 @@ $total = Get::Total();
 ```
 
 ### Get::PageSize()
+
 获取页面大小
 
 ```php
@@ -679,6 +766,7 @@ $pageSize = Get::PageSize();
 ```
 
 ### Get::PageLink()
+
 获取页面链接
 
 ```php
@@ -687,6 +775,7 @@ Get::PageLink('', 'next'); // 下一页链接
 ```
 
 ### Get::CurrentPage()
+
 获取当前页码
 
 ```php
@@ -694,6 +783,7 @@ $currentPage = Get::CurrentPage();
 ```
 
 ### Get::Permalink()
+
 获取页面永久链接
 
 ```php
@@ -701,6 +791,7 @@ $permalink = Get::Permalink();
 ```
 
 ### Get::PageUrl()
+
 获取当前页面URL
 
 ```php

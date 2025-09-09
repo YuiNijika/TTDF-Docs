@@ -42,11 +42,23 @@ export default defineConfig({
     // 顶部栏
     nav: [
       { text: "首页", link: "/" },
+      { text: "组件", link: "/develop/app/components" },
       { 
-        text: "主题开发", 
-        activeMatch: "/develop.*",
+        text: "类与方法", 
         items: [
-          { text: "快速开始", link: "/develop/quickstart" },
+          { text: "面向对象", link: "/develop/function/oop" },
+          { text: "面向过程", link: "/develop/function/opp" },
+        ]
+      },
+      { 
+        text: "集成功能", 
+        items: [
+          { text: "Ajax", link: "/develop/function/ajax" },
+          { text: "Hook", link: "/develop/function/hook" },
+          { text: "Route", link: "/develop/function/route" },
+          { text: "useSeo", link: "/develop/function/use-seo" },
+          { text: "RestAPI", link: "/develop/function/rest-api" },
+          { text: "Vite&Vue", link: "/develop/function/vite-vue" },
         ]
       },
     ],
@@ -74,6 +86,10 @@ export default defineConfig({
             {
               text: '文章字段',
               link: 'app/fields'
+            },
+            {
+              text: '静态资源',
+              link: 'app/assets'
             }
           ]
         },

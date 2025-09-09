@@ -15,6 +15,7 @@
 首先你需要搭建一个Typecho环境，这里不再赘述了，请自行搜索。
 
 如果有`git`环境就打开终端执行
+
 ```bash
 git clone https://github.com/YuiNijika/TTDF.git
 ```
@@ -29,11 +30,11 @@ git clone https://github.com/YuiNijika/TTDF.git
 
 主题相关信息在`index.php`的顶部注释中定义
 
- - 介绍
- - 包名
- - 作者
- - 版本
- - 链接
+- 介绍
+- 包名
+- 作者
+- 版本
+- 链接
 
 ```php
 <?php
